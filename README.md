@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed:
 
     ```sh
     git clone https://github.com/Promise-csharp/SolanaGameSC.git
-    cd solana-game-items
+    cd SolanaGameSC
     ```
 
 2. Install Rust and Solana CLI:
