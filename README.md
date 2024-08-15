@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/solana-game-items.git
+    git clone https://github.com/Promise-csharp/SolanaGameSC.git
     cd solana-game-items
     ```
 
