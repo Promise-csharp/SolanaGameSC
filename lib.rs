@@ -117,7 +117,7 @@ fn process_use_item(
         return Err(ProgramError::Custom(1)); // Not the owner of the item
     }
 
-    // Apply item effect (e.g., increase health or gun damage)
+    //  Apply item effect (e.g., increase health or gun damage)
     // (This is just a placeholder for the actual game logic)
     msg!("Item used: ID {}, Effect Value {}", item_id, item_data.value);
 
