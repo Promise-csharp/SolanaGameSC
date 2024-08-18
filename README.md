@@ -96,7 +96,20 @@ To interact with the deployed contract, you can use the Solana CLI or write clie
       solana program invoke <PROGRAM_ID> --data <USE_INSTRUCTION_DATA> --signer <SIGNER_KEYPAIR>
       ```
 
+
+## Batch file configuration
+
+mkdir your_project_name
+cd your_project_name
+cargo init --lib
+mkdir tests scripts client
+touch src/instruction.rs src/processor.rs src/state.rs
+touch tests/integration_tests.rs
+touch scripts/build.sh scripts/deploy.sh
+touch client/main.ts
+
 ## Testing
+
 
 For local testing, you can write test scripts or use the Solana test validator. Follow the [Solana testing guide](https://docs.solana.com/developing/test-validator) for more details on setting up a local test environment.
 
