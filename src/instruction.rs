@@ -19,6 +19,7 @@ pub enum GameInstruction {
     },
 }
 
+
 impl GameInstruction {
     // Unpack inbound buffer to associated Instruction
     // The expected format for input is a Borsh serialized vector
