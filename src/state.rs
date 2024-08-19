@@ -1,6 +1,7 @@
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::pubkey::Pubkey;
 
+
 // Define the metadata structure for NFTs
 #[derive(BorshSerialize, BorshDeserialize, Debug)]
 pub struct NFTMetadata {
