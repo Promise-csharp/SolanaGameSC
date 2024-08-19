@@ -107,11 +107,13 @@ fn transfer_token(
         &[source.clone(), destination.clone(), authority.clone(), token_program.clone()],
     )?;
 
+
     // Log transfer information
     msg!("Token transfer successful");
     msg!("Amount: {}", amount);
 
     Ok(())
+
 }
 
 // Function to execute in-game transactions
