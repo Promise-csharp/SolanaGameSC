@@ -10,8 +10,10 @@ mod instruction;
 mod processor;
 mod state;
 
+
 // Declare and export the program's entrypoint
 entrypoint!(process_instruction);
+
 
 // Program entrypoint's implementation
 pub fn process_instruction(
