@@ -27,3 +27,4 @@ impl GameInstruction {
         GameInstruction::try_from_slice(input).map_err(|_| ProgramError::InvalidInstructionData)
     }
 }
+
