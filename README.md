@@ -98,6 +98,7 @@ To interact with the deployed contract, you can use the Solana CLI or write clie
 
 
 
+
 ## Batch file configuration
 
 mkdir your_project_name
