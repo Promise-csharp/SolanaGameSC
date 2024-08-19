@@ -9,6 +9,7 @@ pub struct NFTMetadata {
     pub uri: String,
 }
 
+
 // Define the structure for game transactions
 #[derive(BorshSerialize, BorshDeserialize, Debug)]
 pub struct GameTransaction {
