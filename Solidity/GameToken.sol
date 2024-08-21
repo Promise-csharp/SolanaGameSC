@@ -9,6 +9,11 @@ contract GameToken is ERC20, Ownable {
         _mint(msg.sender, 1000000 * 10**decimals());
     }
 
+    // Function to mint new tokens (only owner can call this)
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
     
 
     event GameTransactionExecuted(address indexed from, address indexed to, uint256 amount);
