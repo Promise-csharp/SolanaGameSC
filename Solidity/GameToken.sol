@@ -23,3 +23,4 @@ contract GameToken is ERC20, Ownable {
 
     event GameTransactionExecuted(address indexed from, address indexed to, uint256 amount);
 }
+
