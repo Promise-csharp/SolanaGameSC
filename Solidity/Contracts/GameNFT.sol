@@ -16,5 +16,10 @@ contract GameNFT is ERC721, Ownable {
         string uri;
     }
 
+    // Mapping from token ID to metadata
+    mapping(uint256 => NFTMetadata) private _tokenMetadata;
+
+    constructor() ERC721("GameNFT", "GNFT") {}
+
     
 }
