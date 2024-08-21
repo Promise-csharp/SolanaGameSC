@@ -30,5 +30,9 @@ contract GameNFT is ERC721, Ownable {
         return newTokenId;
     }
 
-    
+    // Function to get NFT metadata
+    function getTokenMetadata(uint256 tokenId) public view returns (NFTMetadata memory) {
+        require(_exists(tokenId), "Token does not exist");
+        return _tokenMetadata[tokenId];
+    }
 }
