@@ -21,5 +21,14 @@ contract GameNFT is ERC721, Ownable {
 
     constructor() ERC721("GameNFT", "GNFT") {}
 
+    // Function to mint a new NFT
+    function mintNFT(address recipient, string memory name, string memory symbol, string memory uri) public onlyOwner returns (uint256) {
+        _tokenIds.increment();
+        uint256 newTokenId = _tokenIds.current();
+        _mint(recipient, newTokenId);
+        _tokenMetadata[newTokenId] = NFTMetadata(name, symbol, uri);
+        return newTokenId;
+    }
+
     
 }
