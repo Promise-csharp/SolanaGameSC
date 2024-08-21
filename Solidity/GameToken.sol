@@ -14,7 +14,12 @@ contract GameToken is ERC20, Ownable {
         _mint(to, amount);
     }
 
-    
+    // Function to execute in-game transactions
+    function executeGameTransaction(address from, address to, uint256 amount) public {
+        require(balanceOf(from) >= amount, "Insufficient balance");
+        _transfer(from, to, amount);
+        emit GameTransactionExecuted(from, to, amount);
+    }
 
     event GameTransactionExecuted(address indexed from, address indexed to, uint256 amount);
 }
