@@ -12,5 +12,11 @@ contract("GameNFT", (accounts) => {
     assert.equal(result.logs[0].event, "Transfer", "Transfer event should be emitted");
   });
 
-  
+  it("should retrieve NFT metadata", async () => {
+    const tokenId = 1;
+    const metadata = await gameNFT.getTokenMetadata(tokenId);
+    assert.equal(metadata.name, "TestNFT", "Name should match");
+    assert.equal(metadata.symbol, "TNFT", "Symbol should match");
+    assert.equal(metadata.uri, "https://example.com/nft", "URI should match");
+  });
 });
